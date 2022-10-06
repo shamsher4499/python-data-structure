@@ -1,0 +1,7 @@
+def dToB(n):
+    assert int(n) == n, 'Number must be + integer only.'
+    if n == 0:
+        return 0
+    return n%2 + 10 * dToB(int(n/2))
+
+print(dToB(0))
